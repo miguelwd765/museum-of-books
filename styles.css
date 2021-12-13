@@ -3,6 +3,19 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
+image {
+  display: block;
+  width: 100%;
+}
+
+section {
+  margin-top: 3rem;
+}
+
+.container-fluid {
+  max-width: 1300px;
+}
+
 #mainNavbar {
   font-size: 1.25rem;
 }
@@ -58,5 +71,20 @@ body {
   .navbar-toggler-icon {
     display: block;
     padding: 0;
+  }
+}
+
+#heading-group h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+#heading-group span {
+  color: #7699b5;
+}
+
+@media screen and (max-width: 875px) {
+  #heading-group h2 {
+    font-size: 2.15rem;
   }
 }
