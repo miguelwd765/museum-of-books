@@ -54,6 +54,11 @@ section {
   transition: background 250ms ease-in;
 }
 
+.off-active {
+  background-color: transparent;
+  transition: background 250ms ease-in;
+}
+
 .sticky {
   background-color: #dbdbdb;
   transition: background 250ms ease-in;

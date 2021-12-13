@@ -3,6 +3,7 @@ const navToggle = document.querySelector(".navbar-toggler");
 const navLink = document.querySelectorAll(".nav-link");
 
 navToggle.addEventListener("click", function (e) {
+  mainNav.classList.toggle("off-active");
   mainNav.classList.toggle("active");
 });
 
