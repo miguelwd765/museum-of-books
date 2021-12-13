@@ -41,6 +41,10 @@ body {
   transition: background 250ms ease-in;
 }
 
+.sticky {
+  background-color: #dbdbdb;
+  transition: background 250ms ease-in;
+}
 @media screen and (max-width: 400px) {
   #mainNavbar .navbar-brand {
     font-size: 1.5rem;
