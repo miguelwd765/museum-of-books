@@ -36,6 +36,11 @@ body {
   padding: 0;
 }
 
+.active {
+  background-color: #dbdbdb;
+  transition: background 250ms ease-in;
+}
+
 @media screen and (max-width: 400px) {
   #mainNavbar .navbar-brand {
     font-size: 1.5rem;
