@@ -9,7 +9,7 @@ image {
 }
 
 section {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
 }
 
 .container-fluid {
@@ -96,4 +96,23 @@ section {
   #heading-group h2 {
     font-size: 2.15rem;
   }
+}
+
+.section-header h2,
+.section-header p {
+  font-weight: 200;
+  color: #5190c4;
+}
+
+.section-header svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.blurb .lead {
+  line-height: 2;
+}
+
+.icon {
+  color: #5190c4;
 }
