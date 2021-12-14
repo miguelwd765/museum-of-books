@@ -25,10 +25,14 @@ section {
   font-weight: 600;
 }
 
+.nav-link {
+  font-weight: 400;
+}
+
 .navbar-brand,
 .nav-item,
 .nav-link {
-  color: #85b7de;
+  color: #70baf3;
 }
 
 #mainNavbar .navbar-toggler {
