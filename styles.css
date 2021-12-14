@@ -53,6 +53,20 @@ section {
   padding: 0;
 }
 
+.top-btn {
+  display: none;
+  z-index: 100;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.show-top-btn {
+  display: block;
+}
+
 .active {
   background-color: #dbdbdb;
   transition: background 250ms ease-in;
@@ -130,4 +144,8 @@ section {
   display: block;
   width: 100%;
   height: 15rem;
+}
+
+footer {
+  background-color: #dbdbdb;
 }

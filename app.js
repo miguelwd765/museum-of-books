@@ -5,6 +5,8 @@ const navLink = document.querySelectorAll(".nav-link");
 const navContent = document.querySelector("#navbarContent");
 const navCollapse = new bootstrap.Collapse(navContent, { toggle: false });
 
+const topBtn = document.querySelector(".top-btn");
+
 let isNavOpen = mainNav.classList.contains("active");
 
 navToggle.addEventListener("click", function (e) {
@@ -19,6 +21,12 @@ window.addEventListener("scroll", function (e) {
     mainNav.classList.add("sticky");
   } else {
     mainNav.classList.remove("sticky");
+  }
+
+  if (scrollHeight > 500) {
+    topBtn.classList.add("show-top-btn");
+  } else {
+    topBtn.classList.remove("show-top-btn");
   }
 });
 
