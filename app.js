@@ -37,3 +37,6 @@ for (let link of navLink) {
     mainNav.classList.add("off-active");
   });
 }
+
+const date = document.querySelector(".date");
+date.innerHTML = new Date().getFullYear();
