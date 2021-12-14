@@ -10,7 +10,6 @@ let isNavOpen = mainNav.classList.contains("active");
 navToggle.addEventListener("click", function (e) {
   mainNav.classList.toggle("off-active");
   mainNav.classList.toggle("active");
-  console.log(isNavOpen);
 });
 
 window.addEventListener("scroll", function (e) {

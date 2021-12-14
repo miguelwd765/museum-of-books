@@ -116,3 +116,18 @@ section {
 .icon {
   color: #5190c4;
 }
+
+.carousel-caption h4,
+.carousel-caption p {
+  font-weight: 600;
+  color: white;
+  background-color: #5190c4;
+  border-radius: 3px;
+  padding: 0.5rem 0;
+}
+
+.carousel-item img {
+  display: block;
+  width: 100%;
+  height: 15rem;
+}
