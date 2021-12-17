@@ -1,4 +1,6 @@
 const mainNav = document.querySelector("#mainNavbar");
+const navHeight = mainNav.getBoundingClientRect().height;
+
 const linksContainer = document.querySelector(".links-container");
 const navToggle = document.querySelector(".navbar-toggler");
 const navLink = document.querySelectorAll(".nav-link");
@@ -13,26 +15,9 @@ navToggle.addEventListener("click", function (e) {
   mainNav.classList.toggle("active");
 });
 
-window.addEventListener("scroll", function (e) {
-  const scrollHeight = window.pageYOffset;
-  const navHeight = mainNav.getBoundingClientRect().height;
-  if (scrollHeight > navHeight) {
-    mainNav.classList.add("sticky");
-  } else {
-    mainNav.classList.remove("sticky");
-  }
-
-  if (scrollHeight > 500) {
-    topBtn.classList.add("show-top-btn");
-  } else {
-    topBtn.classList.remove("show-top-btn");
-  }
-});
-
 for (let link of navLink) {
   link.addEventListener("click", function (e) {
     e.preventDefault();
-    const navHeight = mainNav.getBoundingClientRect().height;
     const containerHeight = linksContainer.getBoundingClientRect().height;
     const id = link.getAttribute("href").slice(1);
     const element = document.getElementById(id);
@@ -52,6 +37,29 @@ for (let link of navLink) {
     mainNav.classList.add("off-active");
   });
 }
+
+window.addEventListener("scroll", function (e) {
+  const scrollHeight = window.pageYOffset;
+  if (scrollHeight > navHeight) {
+    mainNav.classList.add("sticky");
+  } else {
+    mainNav.classList.remove("sticky");
+  }
+
+  if (scrollHeight > 500) {
+    topBtn.classList.add("show-top-btn");
+  } else {
+    topBtn.classList.remove("show-top-btn");
+  }
+});
+
+topBtn.addEventListener("click", function (e) {
+  if (navHeight > 58) {
+    navCollapse.toggle();
+  }
+
+  console.log(navHeight);
+});
 
 const date = document.querySelector(".date");
 date.innerHTML = new Date().getFullYear();
