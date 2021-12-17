@@ -63,6 +63,13 @@ section {
   right: 2rem;
 }
 
+@media screen and (max-width: 400px) {
+  .top-btn {
+    bottom: 1rem;
+    right: 1.5rem;
+  }
+}
+
 .show-top-btn {
   display: block;
 }
