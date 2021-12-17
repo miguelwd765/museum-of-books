@@ -53,13 +53,5 @@ window.addEventListener("scroll", function (e) {
   }
 });
 
-topBtn.addEventListener("click", function (e) {
-  if (navHeight > 58) {
-    navCollapse.toggle();
-  }
-
-  console.log(navHeight);
-});
-
 const date = document.querySelector(".date");
 date.innerHTML = new Date().getFullYear();
