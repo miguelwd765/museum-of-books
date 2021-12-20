@@ -10,3 +10,9 @@ I utilized Bootstrap classes, the grid system, and also utilized their icons. I 
 - Mobile Responsive 📱
 - Navbar Animation
 - Back to Top Button
+- Modern Design 💻
+
+![image](https://i.imgur.com/e3Q3oCv.png)
+![image](https://i.imgur.com/FIMxHAJ.png)
+![image](https://i.imgur.com/o5pGUM0.png)
+![image](https://i.imgur.com/14RZl5b.png)
