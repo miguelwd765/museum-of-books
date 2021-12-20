@@ -164,6 +164,16 @@ label {
   font-size: 1.25rem;
 }
 
+.sign-up-btn {
+  background-color: #70baf3;
+  border: none;
+  color: #f0f1f2;
+}
+
+.sign-up-btn:hover {
+  color: #f0f1f2;
+}
+
 footer {
   background-color: #dbdbdb;
 }

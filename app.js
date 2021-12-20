@@ -57,5 +57,17 @@ window.addEventListener("scroll", function (e) {
   });
 });
 
+const signUpForm = document.querySelector("#sign-up-form");
+const inputs = document.querySelectorAll("input");
+const signUpTitle = document.querySelector(".sign-up-title");
+
+signUpForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+  for (let input of inputs) {
+    input.value = "";
+  }
+  signUpTitle.textContent = "You are now signed up!";
+});
+
 const date = document.querySelector(".date");
 date.innerHTML = new Date().getFullYear();

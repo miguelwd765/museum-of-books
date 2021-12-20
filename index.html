@@ -289,7 +289,7 @@
 
   <section id="sign-up" class="container-fluid">
     <div class="text-center section-header">
-      <h2>SIGN UP</h2>
+      <h2 class="sign-up-title">SIGN UP</h2>
       <p>For exclusive offers and promotions.</p>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -305,12 +305,15 @@
       </svg>
     </div>
 
-    <form class="row g-3 text-center justify-content-center mt-1">
+    <form
+      class="row g-3 text-center justify-content-center mt-1"
+      id="sign-up-form"
+    >
       <div class="col-md-4">
         <div class="row justify-content-center">
           <div class="col-12">
             <label for="first" class="form-label">First Name</label>
-            <input type="text" class="form-control" id="first" />
+            <input type="text" class="form-control" id="first" required />
           </div>
         </div>
       </div>
@@ -318,7 +321,7 @@
         <div class="row justify-content-center">
           <div class="col-12">
             <label for="last" class="form-label">Last Name</label>
-            <input type="text" class="form-control" id="last" />
+            <input type="text" class="form-control" id="last" required />
           </div>
         </div>
       </div>
@@ -326,9 +329,13 @@
         <div class="row justify-content-center">
           <div class="col-lg-12">
             <label for="email" class="form-label">Email Address</label>
-            <input type="email" class="form-control" id="email" />
+            <input type="email" class="form-control" id="email" required />
           </div>
         </div>
+      </div>
+
+      <div class="col-12">
+        <button type="submit" class="btn sign-up-btn">Sign Up</button>
       </div>
     </form>
   </section>
