@@ -149,6 +149,16 @@ section {
   height: 15rem;
 }
 
+#offers {
+  width: 80%;
+  margin: 3.5rem auto;
+}
+
+label {
+  color: #5190c4;
+  font-size: 1.25rem;
+}
+
 footer {
   background-color: #dbdbdb;
 }
