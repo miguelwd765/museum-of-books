@@ -51,6 +51,10 @@ window.addEventListener("scroll", function (e) {
   } else {
     topBtn.classList.remove("show-top-btn");
   }
+
+  topBtn.addEventListener("click", function (e) {
+    document.body.scrollTop = 0;
+  });
 });
 
 const date = document.querySelector(".date");
