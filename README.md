@@ -4,6 +4,8 @@ This is a project I created using HTML, CSS, JavaScript, and the popular CSS lib
 I utilized Bootstrap classes, the grid system, and also utilized their icons. I did also use images from
 [Unsplash](https://unsplash.com/). This is a website I have created for a fictional museum of books. Thank you.
 
+Take a closer look at the website **[here](https://miguelwd765.github.io/museum-of-books/)**
+
 #### Key Features
 
 - Created with Bootstrap Library
