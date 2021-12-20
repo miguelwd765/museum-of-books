@@ -12,7 +12,7 @@ const topBtn = document.querySelector(".top-btn");
 
 navToggle.addEventListener("click", function (e) {
   mainNav.classList.toggle("off-active");
-  mainNav.classList.toggle("active");
+  mainNav.classList.toggle("nav-active");
 });
 
 for (let link of navLink) {
@@ -33,7 +33,7 @@ for (let link of navLink) {
     });
 
     navCollapse.toggle();
-    mainNav.classList.remove("active");
+    mainNav.classList.remove("nav-active");
     mainNav.classList.add("off-active");
   });
 }
