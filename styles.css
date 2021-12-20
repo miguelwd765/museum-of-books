@@ -149,8 +149,9 @@ section {
   height: 15rem;
 }
 
-#offers {
-  width: 80%;
+#sign-up {
+  width: 90%;
+  max-width: 1100px;
   margin: 3.5rem auto;
 }
 
